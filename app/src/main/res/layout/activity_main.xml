@@ -1,0 +1,338 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:onClick="oneBTN"
+    tools:context=".MainActivity"
+    tools:ignore="UsingOnClickInXml">
+
+    <TableLayout
+        android:id="@+id/tableLayout"
+        android:layout_width="match_parent"
+        android:layout_height="380dp"
+        android:layout_margin="3sp"
+        app:layout_constrainedWidth="true"
+
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/input"
+        app:layout_constraintVertical_bias="0.95"
+        tools:Layout_editor_absoluteY="1dp">
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <Button
+                android:id="@+id/clearBTN"
+
+                android:layout_width="0sp"
+                android:layout_height="70sp"
+                android:layout_margin="1dp"
+                android:layout_weight="1"
+                android:backgroundTint="#ffff0000"
+                android:onClick="clearBTN"
+                android:text="@string/clear"
+                android:textColor="#FFFFFF"
+                android:textSize="24sp"
+                tools:ignore="UsingOnClickInXml" />
+
+
+            <Button
+                android:id="@+id/parenthesesBTN"
+
+                android:layout_width="0sp"
+                android:layout_height="70sp"
+                android:layout_margin="1dp"
+                android:layout_weight="1"
+                android:onClick="parenthesesBTN"
+                android:text="@string/parentheses"
+                android:textColor="#FFFFFF"
+                android:textSize="24sp"
+                tools:ignore="UsingOnClickInXml" />
+
+            <Button
+                android:id="@+id/exponentBTN"
+                android:layout_width="0sp"
+                android:layout_height="70sp"
+                android:layout_margin="1dp"
+                android:layout_weight="1"
+                android:onClick="exponentBTN"
+                android:text="@string/exponent"
+                android:textColor="#FFFFFF"
+                android:textSize="24sp"
+                tools:ignore="UsingOnClickInXml" />
+
+            <Button
+                android:id="@+id/divideBTN"
+                android:layout_width="0sp"
+                android:layout_height="70sp"
+                android:layout_margin="1dp"
+                android:layout_weight="1"
+                android:onClick="divideBTN"
+                android:text="@string/divide"
+                android:textColor="#FFFFFF"
+                android:textSize="24sp"
+                tools:ignore="UsingOnClickInXml" />
+        </TableRow>
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <Button
+                android:id="@+id/sevenBTN"
+                android:layout_width="0sp"
+                android:layout_height="70sp"
+                android:layout_margin="1dp"
+                android:layout_weight="1"
+                android:onClick="sevenBTN"
+                android:text="@string/seven"
+                android:textColor="#FFFFFF"
+                android:textSize="24sp"
+                tools:ignore="UsingOnClickInXml" />
+
+            <Button
+                android:id="@+id/eightBTN"
+                android:layout_width="0sp"
+                android:layout_height="70sp"
+                android:layout_margin="1dp"
+                android:layout_weight="1"
+                android:onClick="eightBTN"
+                android:text="@string/eight"
+                android:textColor="#FFFFFF"
+                android:textSize="24sp"
+                tools:ignore="UsingOnClickInXml" />
+
+            <Button
+                android:id="@+id/nineBTN"
+                android:layout_width="0sp"
+                android:layout_height="70sp"
+                android:layout_margin="1dp"
+                android:layout_weight="1"
+                android:onClick="nineBTN"
+                android:text="@string/nine"
+                android:textColor="#FFFFFF"
+                android:textSize="24sp"
+                tools:ignore="UsingOnClickInXml" />
+
+            <Button
+                android:id="@+id/multiplyBTN"
+                android:layout_width="0sp"
+                android:layout_height="70sp"
+                android:layout_margin="1dp"
+                android:layout_weight="1"
+                android:onClick="multiplyBTN"
+                android:text="@string/multiply"
+                android:textColor="#FFFFFF"
+                android:textSize="24sp" />
+        </TableRow>
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <Button
+                android:id="@+id/fourBTN"
+                android:layout_width="0sp"
+                android:layout_height="70sp"
+                android:layout_margin="1dp"
+                android:layout_weight="1"
+                android:onClick="fourBTN"
+                android:text="@string/four"
+                android:textColor="#FFFFFF"
+                android:textSize="24sp"
+                tools:ignore="UsingOnClickInXml" />
+
+            <Button
+                android:id="@+id/fiveBTN"
+                android:layout_width="0sp"
+                android:layout_height="70sp"
+                android:layout_margin="1dp"
+                android:layout_weight="1"
+                android:onClick="fiveBTN"
+                android:text="@string/five"
+                android:textColor="#FFFFFF"
+                android:textSize="24sp"
+                tools:ignore="UsingOnClickInXml" />
+
+            <Button
+                android:id="@+id/sixBTN"
+                android:layout_width="0sp"
+                android:layout_height="70sp"
+                android:layout_margin="1dp"
+                android:layout_weight="1"
+                android:onClick="sixBTN"
+                android:text="@string/six"
+                android:textColor="#FFFFFF"
+                android:textSize="24sp"
+                tools:ignore="UsingOnClickInXml" />
+
+            <Button
+                android:id="@+id/subtractBTN"
+                android:layout_width="0sp"
+                android:layout_height="70sp"
+                android:layout_margin="1dp"
+                android:layout_weight="1"
+                android:onClick="subtractBTN"
+                android:text="@string/subtract"
+                android:textColor="#FFFFFF"
+                android:textSize="24sp"
+                tools:ignore="UsingOnClickInXml" />
+        </TableRow>
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <Button
+                android:id="@+id/oneBTN"
+                android:layout_width="0sp"
+                android:layout_height="70sp"
+                android:layout_margin="1dp"
+                android:layout_weight="1"
+                android:onClick="oneBTN"
+                android:text="@string/one"
+                android:textColor="#FFFFFF"
+                android:textSize="24sp" />
+
+            <Button
+                android:id="@+id/twoBTN"
+                android:layout_width="0sp"
+                android:layout_height="70sp"
+                android:layout_margin="1dp"
+                android:layout_weight="1"
+                android:onClick="twoBTN"
+                android:text="@string/two"
+                android:textColor="#FFFFFF"
+                android:textSize="24sp"
+                tools:ignore="UsingOnClickInXml" />
+
+            <Button
+                android:id="@+id/threeBTN"
+                android:layout_width="0sp"
+                android:layout_height="70sp"
+                android:layout_margin="1dp"
+                android:layout_weight="1"
+                android:onClick="threeBTN"
+                android:text="@string/three"
+                android:textColor="#FFFFFF"
+                android:textSize="24sp"
+                tools:ignore="UsingOnClickInXml" />
+
+            <Button
+                android:id="@+id/addBTN"
+                android:layout_width="0sp"
+                android:layout_height="70sp"
+                android:layout_margin="1dp"
+                android:layout_weight="1"
+                android:onClick="addBTN"
+                android:text="@string/add"
+                android:textColor="#FFFFFF"
+                android:textSize="24sp"
+                tools:ignore="UsingOnClickInXml" />
+        </TableRow>
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+
+            <Button
+                android:id="@+id/dZeroBTN"
+                android:layout_width="0sp"
+                android:layout_height="70sp"
+                android:layout_margin="1dp"
+                android:layout_weight="1"
+                android:onClick="dZeroBTN"
+                android:text="@string/dZero"
+                android:textColor="#FFFFFF"
+                android:textSize="24sp"
+                tools:ignore="UsingOnClickInXml" />
+
+            <Button
+                android:id="@+id/zeroBTN"
+                android:layout_width="0sp"
+                android:layout_height="70sp"
+                android:layout_margin="1dp"
+                android:layout_weight="1"
+                android:onClick="zeroBTN"
+                android:text="@string/zero"
+                android:textColor="#FFFFFF"
+                android:textSize="24sp"
+                tools:ignore="UsingOnClickInXml" />
+
+            <Button
+                android:id="@+id/pointBTN"
+                android:layout_width="0sp"
+                android:layout_height="70sp"
+                android:layout_margin="1dp"
+                android:layout_weight="1"
+                android:onClick="pointBTN"
+                android:text="@string/point"
+                android:textColor="#FFFFFF"
+                android:textSize="24sp"
+                tools:ignore="UsingOnClickInXml" />
+
+
+            <Button
+                android:id="@+id/equalsBTN"
+                android:layout_width="0sp"
+                android:layout_height="70sp"
+                android:layout_margin="1dp"
+                android:layout_weight="1"
+                android:backgroundTint="#43A047"
+                android:onClick="equalBTN"
+                android:text="@string/equals"
+                android:textColor="#FFFFFF"
+                android:textSize="24sp"
+                tools:ignore="UsingOnClickInXml" />
+
+        </TableRow>
+
+    </TableLayout>
+
+    <EditText
+        android:id="@+id/input"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="28dp"
+        android:autofillHints="false"
+        android:inputType="none"
+        android:text="@string/display"
+        android:textAlignment="textEnd"
+        android:textSize="36sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.553"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:ignore="LabelFor"
+        />
+
+
+    <ImageButton
+        android:id="@+id/imageButton"
+        style="@style/Widget.AppCompat.Button.Borderless"
+        android:layout_width="113dp"
+        android:layout_height="56dp"
+        android:layout_margin="5dp"
+        android:layout_marginBottom="4dp"
+        android:layout_weight="1"
+        android:background="@drawable/circle"
+        android:contentDescription="@string/backspace"
+        android:textColor="#545763"
+        android:textSize="34sp"
+        android:onClick="backspaceBTN"
+        app:layout_constraintBottom_toTopOf="@+id/tableLayout"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:srcCompat="@drawable/backspace"
+        tools:ignore="OnClick" />
+
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
